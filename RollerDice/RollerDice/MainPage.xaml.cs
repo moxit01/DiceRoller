@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace DiceRoller
+namespace RollerDice
 {
     public partial class MainPage : ContentPage
     {

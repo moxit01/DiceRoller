@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B0AA8D94-924C-4574-94CD-4313C15716A9}</ProjectGuid>
+    <ProjectGuid>{12DFEF30-BDA2-4CF5-AB95-2E290049616A}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>DiceRoller.Droid</RootNamespace>
-    <AssemblyName>DiceRoller.Android</AssemblyName>
+    <RootNamespace>RollerDice.Droid</RootNamespace>
+    <AssemblyName>RollerDice.Android</AssemblyName>
     <Deterministic>True</Deterministic>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
@@ -86,9 +86,9 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DiceRoller\DiceRoller.csproj">
-      <Project>{E08D957F-7298-4965-A956-43F3DB3530F9}</Project>
-      <Name>DiceRoller</Name>
+    <ProjectReference Include="..\RollerDice\RollerDice.csproj">
+      <Project>{D93B2A71-20B0-478B-A9E4-41BA1A39325A}</Project>
+      <Name>RollerDice</Name>
     </ProjectReference>
   </ItemGroup>
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

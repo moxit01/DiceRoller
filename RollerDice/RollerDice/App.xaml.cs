@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace DiceRoller
+namespace RollerDice
 {
     public partial class App : Application
     {
