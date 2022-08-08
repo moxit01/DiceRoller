@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RollerDice.Android", "Rolle
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RollerDice", "RollerDice\RollerDice\RollerDice.csproj", "{D93B2A71-20B0-478B-A9E4-41BA1A39325A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceRollerTests", "DiceRollerTests\DiceRollerTests.csproj", "{5F71156F-8B2D-402F-88FF-8CB612BD292E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D93B2A71-20B0-478B-A9E4-41BA1A39325A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D93B2A71-20B0-478B-A9E4-41BA1A39325A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D93B2A71-20B0-478B-A9E4-41BA1A39325A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F71156F-8B2D-402F-88FF-8CB612BD292E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F71156F-8B2D-402F-88FF-8CB612BD292E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F71156F-8B2D-402F-88FF-8CB612BD292E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F71156F-8B2D-402F-88FF-8CB612BD292E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
