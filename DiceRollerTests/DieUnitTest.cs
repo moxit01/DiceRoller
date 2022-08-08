@@ -1,4 +1,6 @@
 ﻿namespace DiceRollerTests;
+using FluentAssertions;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 [TestClass]
 public class DieUnitTest
@@ -29,7 +31,7 @@ public class DieUnitTest
     [TestMethod]
     public void DefaultRollSetsSideCorrectly()
     {
-        for (int i = 0; i < 100; i++)
+        for (int i = 0; i < 200; i++)
         {
 
             d.Roll();
@@ -39,6 +41,10 @@ public class DieUnitTest
 
         }
     }
+
+
+   
+
 
 }
 
