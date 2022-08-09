@@ -1,6 +1,8 @@
-﻿namespace DiceRollerTests;
+namespace DiceRollerTests;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using RollerDice.Models;
+
 
 [TestClass]
 public class DieUnitTest
