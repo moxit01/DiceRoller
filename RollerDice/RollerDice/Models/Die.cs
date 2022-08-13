@@ -28,10 +28,11 @@ namespace RollerDice.Models
             Roll();
         }
 
-        public void Roll()
+        public int Roll()
         {
             Random r = new Random();
             CurrentSide = r.Next(NumberSides) + 1;
+            return CurrentSide;
         }
 
         public int CountRoll(int numberSides)

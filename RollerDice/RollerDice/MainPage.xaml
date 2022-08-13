@@ -4,22 +4,42 @@
              x:Class="RollerDice.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        <Frame BackgroundColor="Black" Padding="20" CornerRadius="0">
+            <Label Text="Die Roller" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
         </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+<StackLayout>
+    <Label Text="Select die" Padding="20" TextColor="Black" FontSize="28" />
+
+    <StackLayout Orientation="Horizontal" Spacing="2" Padding="2" RadioButtonGroup.GroupName="dice">
+
+        <RadioButton Content="d4" Value="4" HorizontalOptions="FillAndExpand" CheckedChanged="RadioButton_CheckedChanged" IsChecked="True"/>
+        <RadioButton Content="d6" Value="6" HorizontalOptions="FillAndExpand" CheckedChanged="RadioButton_CheckedChanged"/>
+        <RadioButton Content="d8" Value="8" HorizontalOptions="FillAndExpand" CheckedChanged="RadioButton_CheckedChanged"/>
+        <RadioButton Content="d10" Value="10" HorizontalOptions="FillAndExpand" CheckedChanged="RadioButton_CheckedChanged"/>
+        <RadioButton Content="d12" Value="12" HorizontalOptions="FillAndExpand" CheckedChanged="RadioButton_CheckedChanged"/>
+        <RadioButton Content="d20" Value="20" HorizontalOptions="FillAndExpand" CheckedChanged="RadioButton_CheckedChanged"/>
+
     </StackLayout>
+
+</StackLayout>
+
+        <StackLayout Orientation="Horizontal" Spacing="2" Padding="2">
+
+            <Button Text="Roll once" BackgroundColor="Black" TextColor="White" BorderColor="Gray" Clicked="Button_Clicked" HorizontalOptions="FillAndExpand" AutomationId="rollOnce"/>
+            <Button Text="Roll twice" BackgroundColor="Black" TextColor="White" Clicked="Button_Clicked_1" HorizontalOptions="FillAndExpand" AutomationId="rollTwice"/>
+
+        </StackLayout>
+
+        <Label Text="Results" FontSize="Title" HorizontalTextAlignment="Center"/>
+
+        <StackLayout Orientation="Horizontal" Spacing="2" Padding="2">
+
+            <Label Text="{Binding ResultValue}" FontSize="Title" BackgroundColor="Black" TextColor="White" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" AutomationId="resultOne"/>
+            <Label Text="{Binding ResultValueTwo}" FontSize="Title" BackgroundColor="Black" TextColor="White" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" AutomationId="resultTwo"/>
+
+        </StackLayout>
+
+ </StackLayout>
 
 </ContentPage>
 
