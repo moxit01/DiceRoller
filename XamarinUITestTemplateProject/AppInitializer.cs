@@ -4,7 +4,7 @@ using System.Linq;
 using Xamarin.UITest;
 using Xamarin.UITest.Queries;
 
-namespace XamarinUITestTemplateProject
+namespace UserInterfaceTest
 {
     public class AppInitializer
     {
@@ -24,10 +24,8 @@ namespace XamarinUITestTemplateProject
             if (platform == Platform.Android)
             {
                 return ConfigureApp
-                    .Android
-                    // TODO: Update this path to point to your Android app and uncomment the
-                    // code if the app is not included in the solution.
-                    //.ApkFile ("../../../Droid/bin/Debug/xamarinforms.apk")
+                    .Android                
+                    .InstalledApp("com.companyname.rollerdice")
                     .StartApp();
             }
 
