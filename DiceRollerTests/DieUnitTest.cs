@@ -55,7 +55,7 @@ public class DieUnitTest
     public void DieWithCustomSides(int sides, string name)
     {
         d.Name().Should().Be(name);
-        d.Numsides().Should().Be(sides);
+        d.Numbersides().Should().Be(sides);
         
     }
 
@@ -82,9 +82,9 @@ public class DieUnitTest
     public void CorrectNewside(int sides, string name, int currentSide)
     {
         
-        die.NumberSides().Should().Be(sides);
-        die.Name().Should().Be(name);
-        die.CurrentSide().Should().Be(currentSide);
+        d.NumberSides().Should().Be(sides);
+        d.Name().Should().Be(name);
+        d.CurrentSide().Should().Be(currentSide);
     }
 
 
